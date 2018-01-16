@@ -1857,4 +1857,7 @@ endmenu
 menu "ppa firmware"
 	source "package/ppa/Config.in"
 endmenu
+menu "Cloud"
+	source "package/aliyun/Config.in"
+endmenu
 endmenu

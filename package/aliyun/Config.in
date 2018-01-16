@@ -1,0 +1,4 @@
+config BR2_PACKAGE_ALIYUN
+	bool "aliyun iot sdk"
+	help
+	Aliyun iot gateway sdk.
