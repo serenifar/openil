@@ -1860,4 +1860,7 @@ endmenu
 menu "Cloud"
 	source "package/aliyun/Config.in"
 endmenu
+menu "modbus-simulator"
+	source "package/modbus/Config.in"
+endmenu
 endmenu
