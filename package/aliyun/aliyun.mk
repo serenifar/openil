@@ -21,8 +21,8 @@ endef
 
 define ALIYUN_INSTALL_TARGET_CMDS
 	cp -dpfr $(@D)/output/release/bin/* $(TARGET_DIR)/usr/sbin/
-	cp -dpfr $(@D)/exec/* $(TARGET_DIR)/usr/sbin/
-	cp -dpfr package/aliyun/device/*.json $(TARGET_DIR)/usr/sbin/
+	cp -dpfr $(@D)/exec/* $(TARGET_DIR)/usr/sbin/ 2>/dev/null; true
+	cp -dpfr package/aliyun/device/*.json $(TARGET_DIR)/usr/sbin/ 2>/dev/null; true
 endef
 
 $(eval $(generic-package))
